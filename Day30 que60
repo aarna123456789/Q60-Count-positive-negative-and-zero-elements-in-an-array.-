@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+int a[100],n,i,p=0,neg=0,z=0;
+printf("enter size");
+scanf("%d",&n);
+for(i=0,i<n,i++)
+scanf("%d",&a[i]);
+for(i=0;i<n;i++)
+{
+if(a[i]>0)
+p++;
+else if(a[i]<0)
+neg++;
+else
+z++;
+}
+printf("positive is %d",p);
+printf("negative is %d",neg);
+printf("zeros %d",z);
+return 0;
+}
